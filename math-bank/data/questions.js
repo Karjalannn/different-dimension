@@ -918,6 +918,19 @@ window.TJ_BUILTIN_QUESTIONS = [
     source: '第三章习题',
     createdAt: '2026-11-03T00:00:00.000Z',
     updatedAt: '2026-11-03T00:00:00.000Z'
+  },
+  {
+    id: 'ch04-012',
+    chapterId: 'ch04',
+    type: '计算题',
+    difficulty: 1,
+    stem: '求 $\\int \\frac{x^{2}}{1 + x^{2}}\\arctan x\\,\\mathrm{d}x$。',
+    answer: '$x\\arctan x + \\ln\\frac{1}{\\sqrt{1 + x^{2}}} - \\frac{1}{2}(\\arctan x)^{2} + C$',
+    solution: '令 $\\arctan x = u$，$x = \\tan u$，$\\mathrm{d}x = \\frac{\\mathrm{d}u}{\\cos^{2}u}$。于是\n原式 $= \\int \\frac{\\tan^{2}u}{1 + \\tan^{2}u}\\cdot u\\cdot\\frac{\\mathrm{d}u}{\\cos^{2}u} = \\int u\\tan^{2}u\\,\\mathrm{d}u = \\int u(\\sec^{2}u - 1)\\,\\mathrm{d}u$\n$= \\int u\\sec^{2}u\\,\\mathrm{d}u - \\frac{1}{2}u^{2} = \\int u\\,\\mathrm{d}(\\tan u) - \\frac{1}{2}u^{2} = u\\tan u - \\int \\tan u\\,\\mathrm{d}u - \\frac{1}{2}u^{2}$\n$= u\\tan u + \\ln|\\cos u| - \\frac{1}{2}u^{2} + C = x\\arctan x + \\ln\\frac{1}{\\sqrt{1 + x^{2}}} - \\frac{1}{2}(\\arctan x)^{2} + C$。',
+    tags: ['不定积分', '换元积分', '分部积分', '反正切'],
+    source: '第四章习题',
+    createdAt: '2026-11-03T00:00:00.000Z',
+    updatedAt: '2026-11-03T00:00:00.000Z'
   }
 ];
 
