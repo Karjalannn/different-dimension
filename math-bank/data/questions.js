@@ -853,6 +853,19 @@ window.TJ_BUILTIN_QUESTIONS = [
     source: '第四章习题',
     createdAt: '2026-11-03T00:00:00.000Z',
     updatedAt: '2026-11-03T00:00:00.000Z'
+  },
+  {
+    id: 'ch04-008',
+    chapterId: 'ch04',
+    type: '计算题',
+    difficulty: 2,
+    stem: '设 $f(x^{2} - 1) = \\ln\\frac{x^{2}}{x^{2} - 2}$，且 $f[\\varphi(x)] = \\ln x$，求 $\\int \\varphi(x)\\,\\mathrm{d}x$。',
+    answer: '$2\\ln(x - 1) + x + C$',
+    solution: '因为 $f(x^{2} - 1) = \\ln\\frac{(x^{2} - 1) + 1}{(x^{2} - 1) - 1}$，所以 $f(x) = \\ln\\frac{x + 1}{x - 1}$。\n又 $f[\\varphi(x)] = \\ln\\frac{\\varphi(x) + 1}{\\varphi(x) - 1} = \\ln x$，从而 $\\frac{\\varphi(x) + 1}{\\varphi(x) - 1} = x$，$\\varphi(x) = \\frac{x + 1}{x - 1}$。于是\n$\\int \\varphi(x)\\,\\mathrm{d}x = \\int \\frac{x + 1}{x - 1}\\,\\mathrm{d}x = 2\\ln(x - 1) + x + C$。',
+    tags: ['复合函数', '函数方程', '不定积分'],
+    source: '第四章习题',
+    createdAt: '2026-11-03T00:00:00.000Z',
+    updatedAt: '2026-11-03T00:00:00.000Z'
   }
 ];
 
