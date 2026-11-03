@@ -866,6 +866,19 @@ window.TJ_BUILTIN_QUESTIONS = [
     source: '第四章习题',
     createdAt: '2026-11-03T00:00:00.000Z',
     updatedAt: '2026-11-03T00:00:00.000Z'
+  },
+  {
+    id: 'ch04-009',
+    chapterId: 'ch04',
+    type: '计算题',
+    difficulty: 2,
+    stem: '计算 $\\int \\frac{xe^{x}}{\\sqrt{e^{x} - 2}}\\,\\mathrm{d}x$。',
+    answer: '$2x\\sqrt{e^{x} - 2} - 4\\sqrt{e^{x} - 2} + 4\\sqrt{2}\\arctan\\sqrt{\\frac{e^{x} - 2}{2}} + C$',
+    solution: '先分部积分后变量代换。\n$\\int \\frac{xe^{x}}{\\sqrt{e^{x} - 2}}\\,\\mathrm{d}x = \\int x\\,\\mathrm{d}\\left(2\\sqrt{e^{x} - 2}\\right) = 2x\\sqrt{e^{x} - 2} - 2\\int \\sqrt{e^{x} - 2}\\,\\mathrm{d}x$。\n令 $e^{x} - 2 = t^{2}$，$e^{x} = 2 + t^{2}$，$x = \\ln(2 + t^{2})$，$\\mathrm{d}x = \\frac{2t}{2 + t^{2}}\\,\\mathrm{d}t$，\n$\\int \\sqrt{e^{x} - 2}\\,\\mathrm{d}x = \\int t\\cdot\\frac{2t}{2 + t^{2}}\\,\\mathrm{d}t = 2\\int \\frac{t^{2} + 2 - 2}{2 + t^{2}}\\,\\mathrm{d}t = 2t - \\frac{4}{\\sqrt{2}}\\arctan\\frac{t}{\\sqrt{2}} + C$，\n所以\n$\\int \\frac{xe^{x}}{\\sqrt{e^{x} - 2}}\\,\\mathrm{d}x = 2x\\sqrt{e^{x} - 2} - 4\\sqrt{e^{x} - 2} + 4\\sqrt{2}\\arctan\\sqrt{\\frac{e^{x} - 2}{2}} + C$。',
+    tags: ['不定积分', '分部积分', '换元积分'],
+    source: '第四章习题',
+    createdAt: '2026-11-03T00:00:00.000Z',
+    updatedAt: '2026-11-03T00:00:00.000Z'
   }
 ];
 
