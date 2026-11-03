@@ -2,7 +2,21 @@
 layout: default
 ---
 
+{% if page.column %}
+<p class="column-kicker">
+  <a href="{{ page.column_url | default: '/' | relative_url }}">《{{ page.column }}》</a>
+  <span class="column-kicker-sep">·</span>
+  <span>{{ page.chapter_label }}</span>
+</p>
+{% endif %}
+
+{% if page.chapter_label %}
+<div class="chapter-body">
 {{ content }}
+</div>
+{% else %}
+{{ content }}
+{% endif %}
 
 <p class="post-back">
   <a href="{{ site.baseurl }}/" class="btn-back">⬅️ 返回首页</a>

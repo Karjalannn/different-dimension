@@ -5,13 +5,33 @@ title: Hi!!!我是柯宇！
 
 # 异乡之翼
 
+<h2 class="sec-title">连载 · 《万能遥控》</h2>
+
+<p class="column-intro">山松不是普通的学生——他是「辰星」的「异界使者」，每周五都要去异界做维护。而这个秘密，我替他守了七年。<a class="column-more" href="{{ '/wanneng-yaokong/' | relative_url }}">进入栏目 →</a></p>
+
 <ul class="post-list">
 {% for post in site.posts %}
+  {% if post.column == '万能遥控' %}
+  <li class="post-item">
+    <h2 class="post-item-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+    <p class="post-item-meta">{{ post.chapter_label }} · {{ post.date | date: "%Y-%m-%d" }}</p>
+    <p class="post-item-excerpt">{{ post.content | strip_html | normalize_whitespace | strip | truncate: 79, "…" }}</p>
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+<h2 class="sec-title">随笔</h2>
+
+<ul class="post-list">
+{% for post in site.posts %}
+  {% unless post.column %}
   <li class="post-item">
     <h2 class="post-item-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
     <p class="post-item-meta">{{ post.date | date: "%Y-%m-%d" }}</p>
     <p class="post-item-excerpt">{{ post.content | strip_html | normalize_whitespace | strip | truncate: 79, "…" }}</p>
   </li>
+  {% endunless %}
 {% endfor %}
 </ul>
 

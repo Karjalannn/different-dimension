@@ -182,3 +182,158 @@
 .comments .giscus-frame {
   width: 100%;
 }
+
+/* 文章顶部：栏目导引行（《万能遥控》· 第零章） */
+.column-kicker {
+  margin: 0 0 1.8rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eff0f1;
+  font-size: 0.86rem;
+  letter-spacing: 0.08em;
+  color: #8e9aa7;
+}
+
+.column-kicker a {
+  color: #159957;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.column-kicker a:hover {
+  text-decoration: underline;
+}
+
+.column-kicker .column-kicker-sep {
+  margin: 0 0.45em;
+  color: #c3ccd6;
+}
+
+/* 首页第一个分区紧跟大标题：不要那条孤零零的分隔线 */
+.main-content h1 + .sec-title {
+  margin-top: 2rem;
+  padding-top: 0;
+  border-top: none;
+}
+
+/* 栏目简介（首页入口 / 栏目页开头） */
+.main-content .column-intro {
+  margin: 1.2rem 0 1.6rem;
+  font-size: 0.98rem;
+  line-height: 1.85;
+  color: #5b666c;
+}
+
+.main-content .column-intro .column-more {
+  margin-left: 0.35em;
+  font-weight: 600;
+  color: #159957;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.main-content .column-intro .column-more:hover {
+  color: #127a46;
+  text-decoration: underline;
+}
+
+/* 栏目页：章节标题上的章数 */
+.main-content .chapter-heading .chapter-count {
+  margin-left: 0.8em;
+  font-size: 0.82rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: #9aa5b1;
+}
+
+/* 栏目页：章节列表 */
+.main-content .chapter-list {
+  margin: 1.3rem 0 2rem;
+  padding-left: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.chapter-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.9rem;
+  padding: 0.9rem 1.15rem;
+  background: #ffffff;
+  border: 1px solid #e5e9ef;
+  border-radius: 10px;
+  transition: box-shadow 0.18s ease, transform 0.18s ease, border-color 0.18s ease;
+}
+
+.chapter-item:hover {
+  transform: translateY(-2px);
+  border-color: #d6dde7;
+  box-shadow: 0 2px 6px rgba(17, 24, 39, 0.06),
+              0 20px 38px -20px rgba(17, 24, 39, 0.3);
+}
+
+.chapter-item .chapter-no {
+  flex: 0 0 auto;
+  font-size: 0.82rem;
+  color: #8e9aa7;
+  letter-spacing: 0.02em;
+}
+
+.chapter-item .chapter-title {
+  flex: 1 1 auto;
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: #14568f;
+  text-decoration: none;
+}
+
+.chapter-item .chapter-title:hover {
+  color: #159957;
+  text-decoration: underline;
+}
+
+.chapter-item .chapter-date {
+  flex: 0 0 auto;
+  font-size: 0.8rem;
+  color: #9aa5b1;
+  letter-spacing: 0.02em;
+}
+
+.chapter-item.chapter-empty {
+  color: #8e9aa7;
+  font-size: 0.95rem;
+}
+
+/* 章节正文：首行缩进 + 松行距，读起来像书 */
+.chapter-body p {
+  margin: 0 0 0.6em;
+  text-indent: 2em;
+  line-height: 1.95;
+  font-size: 1.02rem;
+}
+
+/* 文末字数统计 */
+.chapter-body .post-wordcount {
+  margin: 2.4rem 0 0;
+  padding-top: 1.1rem;
+  border-top: 1px dashed #e2e8ef;
+  font-size: 0.88rem;
+  letter-spacing: 0.02em;
+  color: #7b8794;
+}
+
+.chapter-body .post-wordcount strong {
+  color: #2f3a41;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 42em) {
+  .chapter-item {
+    flex-wrap: wrap;
+    gap: 0.35rem 0.7rem;
+  }
+
+  .chapter-item .chapter-date {
+    width: 100%;
+  }
+}
