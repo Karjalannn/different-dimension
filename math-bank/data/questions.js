@@ -762,6 +762,19 @@ window.TJ_BUILTIN_QUESTIONS = [
     source: '第三章习题',
     createdAt: '2026-11-03T00:00:00.000Z',
     updatedAt: '2026-11-03T00:00:00.000Z'
+  },
+  {
+    id: 'ch04-001',
+    chapterId: 'ch04',
+    type: '填空题',
+    difficulty: 1,
+    stem: '设 $f(x) = |x| + 2$，则 $\\int f(x)\\,\\mathrm{d}x = $ ______。',
+    answer: '$\\int f(x)\\,\\mathrm{d}x = \\begin{cases} \\frac{1}{2}x^{2} + 2x + C, & x > 0, \\\\ -\\frac{1}{2}x^{2} + 2x + C, & x \\le 0. \\end{cases}$',
+    solution: '$f(x) = \\begin{cases} x + 2, & x > 0, \\\\ -x + 2, & x \\le 0. \\end{cases}$\n当 $x > 0$ 时，$\\int f(x)\\,\\mathrm{d}x = \\int (x + 2)\\,\\mathrm{d}x = \\frac{1}{2}x^{2} + 2x + C_{1}$。\n当 $x \\le 0$ 时，$\\int f(x)\\,\\mathrm{d}x = \\int (-x + 2)\\,\\mathrm{d}x = -\\frac{1}{2}x^{2} + 2x + C_{2}$。\n因为 $f(x)$ 在 $x = 0$ 点连续，故 $\\frac{1}{2}\\cdot 0 + 2\\cdot 0 + C_{1} = -\\frac{1}{2}\\cdot 0 + 2\\cdot 0 + C_{2}$，所以 $C_{1} = C_{2}$。\n故\n$\\int f(x)\\,\\mathrm{d}x = \\begin{cases} \\frac{1}{2}x^{2} + 2x + C, & x > 0, \\\\ -\\frac{1}{2}x^{2} + 2x + C, & x \\le 0. \\end{cases}$',
+    tags: ['不定积分', '分段函数', '连续性'],
+    source: '第四章习题',
+    createdAt: '2026-11-03T00:00:00.000Z',
+    updatedAt: '2026-11-03T00:00:00.000Z'
   }
 ];
 
