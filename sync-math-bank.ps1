@@ -1,4 +1,4 @@
-# 把 D:\blog\math-bank 同步到博客仓库的 math-bank/，然后提交并推送。
+﻿# 把 D:\blog\math-bank 同步到博客仓库的 math-bank/，然后提交并推送。
 # 在博客仓库根目录运行： powershell -ExecutionPolicy Bypass -File .\sync-math-bank.ps1
 
 $ErrorActionPreference = 'Stop'
