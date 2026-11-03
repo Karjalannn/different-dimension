@@ -44,6 +44,6 @@ title: Hi!!!我是柯宇！
   </li>
   <li class="demo-item">
     <a class="demo-link" href="{{ '/math-bank/' | relative_url }}" target="_blank" rel="noopener">高等数学题库 · 离线 LaTeX 组卷 ↗</a>
-    <p class="demo-desc">第一至三章 175 道题，支持检索、随机组卷、LaTeX 公式和 Word 导出；题库数据保存在浏览器本地。</p>
+    <p class="demo-desc">第一至四章题库，支持检索、随机组卷、LaTeX 公式和 Word 导出；题库数据保存在浏览器本地。</p>
   </li>
 </ul>
