@@ -840,6 +840,19 @@ window.TJ_BUILTIN_QUESTIONS = [
     source: '第四章习题',
     createdAt: '2026-11-03T00:00:00.000Z',
     updatedAt: '2026-11-03T00:00:00.000Z'
+  },
+  {
+    id: 'ch04-007',
+    chapterId: 'ch04',
+    type: '计算题',
+    difficulty: 1,
+    stem: '求不定积分 $\\int \\frac{1 + \\sin^{2}x}{1 - \\cos 2x}\\,\\mathrm{d}x$。',
+    answer: '$-\\frac{1}{2}\\cot x + \\frac{1}{2}x + C$',
+    solution: '$\\int \\frac{1 + \\sin^{2}x}{1 - \\cos 2x}\\,\\mathrm{d}x = \\int \\frac{1 + \\sin^{2}x}{1 - 1 + 2\\sin^{2}x}\\,\\mathrm{d}x = \\frac{1}{2}\\int (\\csc^{2}x + 1)\\,\\mathrm{d}x = -\\frac{1}{2}\\cot x + \\frac{1}{2}x + C$。',
+    tags: ['不定积分', '三角恒等式'],
+    source: '第四章习题',
+    createdAt: '2026-11-03T00:00:00.000Z',
+    updatedAt: '2026-11-03T00:00:00.000Z'
   }
 ];
 
