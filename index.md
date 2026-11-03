@@ -42,4 +42,8 @@ title: Hi!!!我是柯宇！
     <a class="demo-link" href="{{ '/jiejiaoxian.html' | relative_url }}" target="_blank" rel="noopener">立体截交线 · 三维交互演示 ↗</a>
     <p class="demo-desc">单个 HTML 文件，Three.js 全部内联、断网也能跑：切换立体、拖动截平面，实时看截交线与三视图。</p>
   </li>
+  <li class="demo-item">
+    <a class="demo-link" href="{{ '/math-bank/' | relative_url }}" target="_blank" rel="noopener">高等数学题库 · 离线 LaTeX 组卷 ↗</a>
+    <p class="demo-desc">第一至三章 175 道题，支持检索、随机组卷、LaTeX 公式和 Word 导出；题库数据保存在浏览器本地。</p>
+  </li>
 </ul>

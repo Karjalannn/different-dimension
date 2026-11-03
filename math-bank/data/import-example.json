@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "example-ch01-001",
+      "chapter": "第1章",
+      "type": "计算题",
+      "difficulty": "基础",
+      "stem": "求极限 lim_{x→0} (sin 3x) / x。",
+      "answer": "3",
+      "solution": "当 x→0 时，sin 3x ~ 3x，因此原式 = lim_{x→0} (3x)/x = 3。",
+      "tags": ["极限", "等价无穷小"],
+      "source": "自编"
+    },
+    {
+      "id": "example-ch02-001",
+      "chapter": "导数与微分",
+      "type": "填空题",
+      "difficulty": "中等",
+      "stem": "设 y = x^{2}e^{x}，求 y′。",
+      "answer": "e^{x}(x^{2} + 2x)",
+      "solution": "使用乘积求导法则：y′ = 2xe^{x} + x^{2}e^{x} = e^{x}(x^{2} + 2x)。",
+      "tags": ["导数", "乘积法则"],
+      "source": "自编"
+    },
+    {
+      "id": "example-ch04-001",
+      "chapter": "ch04",
+      "type": "计算题",
+      "difficulty": "基础",
+      "stem": "求不定积分 ∫ x cos x dx。",
+      "answer": "x sin x + cos x + C",
+      "solution": "分部积分：取 u = x，dv = cos x dx，得到 ∫ x cos x dx = x sin x − ∫ sin x dx = x sin x + cos x + C。",
+      "tags": ["不定积分", "分部积分"],
+      "source": "自编"
+    }
+  ]
+}
