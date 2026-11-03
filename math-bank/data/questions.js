@@ -775,6 +775,71 @@ window.TJ_BUILTIN_QUESTIONS = [
     source: '第四章习题',
     createdAt: '2026-11-03T00:00:00.000Z',
     updatedAt: '2026-11-03T00:00:00.000Z'
+  },
+  {
+    id: 'ch04-002',
+    chapterId: 'ch04',
+    type: '计算题',
+    difficulty: 1,
+    stem: '求不定积分 $\\int x^{2}\\sqrt[3]{x}\\,\\mathrm{d}x$。',
+    answer: '$\\frac{3}{10}x^{10/3} + C$',
+    solution: '$\\int x^{2}\\sqrt[3]{x}\\,\\mathrm{d}x = \\int x^{7/3}\\,\\mathrm{d}x = \\frac{1}{\\frac{7}{3} + 1}x^{\\frac{7}{3} + 1} + C = \\frac{3}{10}x^{10/3} + C$。',
+    tags: ['不定积分', '幂函数'],
+    source: '第四章习题',
+    createdAt: '2026-11-03T00:00:00.000Z',
+    updatedAt: '2026-11-03T00:00:00.000Z'
+  },
+  {
+    id: 'ch04-003',
+    chapterId: 'ch04',
+    type: '计算题',
+    difficulty: 1,
+    stem: '求不定积分 $\\int (x - 2)^{2}\\,\\mathrm{d}x$。',
+    answer: '$\\frac{1}{3}x^{3} - 2x^{2} + 4x + C$',
+    solution: '$\\int (x - 2)^{2}\\,\\mathrm{d}x = \\int (x^{2} - 4x + 4)\\,\\mathrm{d}x = \\int x^{2}\\,\\mathrm{d}x - 4\\int x\\,\\mathrm{d}x + 4\\int \\mathrm{d}x = \\frac{1}{3}x^{3} - 2x^{2} + 4x + C$。',
+    tags: ['不定积分', '多项式'],
+    source: '第四章习题',
+    createdAt: '2026-11-03T00:00:00.000Z',
+    updatedAt: '2026-11-03T00:00:00.000Z'
+  },
+  {
+    id: 'ch04-004',
+    chapterId: 'ch04',
+    type: '计算题',
+    difficulty: 1,
+    stem: '求不定积分 $\\int \\frac{(1 - x)^{2}}{\\sqrt{x}}\\,\\mathrm{d}x$。',
+    answer: '$\\frac{2}{5}x^{5/2} - \\frac{4}{3}x^{3/2} + 2x^{1/2} + C$',
+    solution: '$\\int \\frac{(1 - x)^{2}}{\\sqrt{x}}\\,\\mathrm{d}x = \\int x^{-1/2}\\,\\mathrm{d}x - 2\\int x^{1/2}\\,\\mathrm{d}x + \\int x^{3/2}\\,\\mathrm{d}x = 2x^{1/2} - \\frac{4}{3}x^{3/2} + \\frac{2}{5}x^{5/2} + C$。',
+    tags: ['不定积分', '幂函数'],
+    source: '第四章习题',
+    createdAt: '2026-11-03T00:00:00.000Z',
+    updatedAt: '2026-11-03T00:00:00.000Z'
+  },
+  {
+    id: 'ch04-005',
+    chapterId: 'ch04',
+    type: '计算题',
+    difficulty: 1,
+    stem: '求不定积分 $\\int \\frac{3x^{4} + 3x^{2} + 1}{x^{2} + 1}\\,\\mathrm{d}x$。',
+    answer: '$x^{3} + \\arctan x + C$',
+    solution: '$\\int \\frac{3x^{4} + 3x^{2} + 1}{x^{2} + 1}\\,\\mathrm{d}x = \\int \\frac{3x^{2}(x^{2} + 1) + 1}{x^{2} + 1}\\,\\mathrm{d}x = \\int \\left(3x^{2} + \\frac{1}{1 + x^{2}}\\right)\\mathrm{d}x = \\int 3x^{2}\\,\\mathrm{d}x + \\int \\frac{1}{1 + x^{2}}\\,\\mathrm{d}x = x^{3} + \\arctan x + C$。',
+    tags: ['不定积分', '有理函数', '反正切'],
+    source: '第四章习题',
+    createdAt: '2026-11-03T00:00:00.000Z',
+    updatedAt: '2026-11-03T00:00:00.000Z'
+  },
+  {
+    id: 'ch04-006',
+    chapterId: 'ch04',
+    type: '计算题',
+    difficulty: 1,
+    stem: '求不定积分 $\\int 3^{x}e^{x}\\,\\mathrm{d}x$。',
+    answer: '$\\frac{1}{\\ln(3e)}(3e)^{x} + C$',
+    solution: '$\\int 3^{x}e^{x}\\,\\mathrm{d}x = \\int (3e)^{x}\\,\\mathrm{d}x = \\frac{1}{\\ln(3e)}(3e)^{x} + C$。',
+    tags: ['不定积分', '指数函数'],
+    source: '第四章习题',
+    createdAt: '2026-11-03T00:00:00.000Z',
+    updatedAt: '2026-11-03T00:00:00.000Z'
   }
 ];
 
