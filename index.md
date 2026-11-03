@@ -7,7 +7,7 @@ title: Hi!!!我是柯宇！
 
 <h2 class="sec-title">连载 · 《万能遥控》</h2>
 
-<p class="column-intro">山松不是普通的学生——他是「辰星」的「异界使者」，每周五都要去异界做维护。而这个秘密，我替他守了七年。<a class="column-more" href="{{ '/wanneng-yaokong/' | relative_url }}">进入栏目 →</a></p>
+<p class="column-intro"><a class="column-more" href="{{ '/wanneng-yaokong/' | relative_url }}">进入栏目 →</a></p>
 
 <ul class="post-list">
 {% for post in site.posts %}
