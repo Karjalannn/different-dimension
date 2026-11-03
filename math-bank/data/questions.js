@@ -879,6 +879,19 @@ window.TJ_BUILTIN_QUESTIONS = [
     source: '第四章习题',
     createdAt: '2026-11-03T00:00:00.000Z',
     updatedAt: '2026-11-03T00:00:00.000Z'
+  },
+  {
+    id: 'ch04-010',
+    chapterId: 'ch04',
+    type: '计算题',
+    difficulty: 3,
+    stem: '计算不定积分 $\\int \\frac{x^{4} + 1}{x^{6} + 1}\\,\\mathrm{d}x$。',
+    answer: '$\\arctan x + \\frac{1}{3}\\arctan(x^{3}) + C$',
+    solution: '利用立方和公式，对分母进行因式分解：\n$x^{6} + 1 = (x^{2})^{3} + 1^{3} = (x^{2} + 1)(x^{4} - x^{2} + 1)$。\n对分子进行凑项变形：\n$x^{4} + 1 = (x^{4} - x^{2} + 1) + x^{2}$。\n将原积分拆分为两项：\n$\\int \\frac{x^{4} + 1}{x^{6} + 1}\\,\\mathrm{d}x = \\int \\frac{(x^{4} - x^{2} + 1) + x^{2}}{(x^{2} + 1)(x^{4} - x^{2} + 1)}\\,\\mathrm{d}x = \\int \\frac{x^{4} - x^{2} + 1}{(x^{2} + 1)(x^{4} - x^{2} + 1)}\\,\\mathrm{d}x + \\int \\frac{x^{2}}{(x^{2} + 1)(x^{4} - x^{2} + 1)}\\,\\mathrm{d}x = \\int \\frac{1}{x^{2} + 1}\\,\\mathrm{d}x + \\int \\frac{x^{2}}{x^{6} + 1}\\,\\mathrm{d}x$。\n第一项为基本积分公式，第二项采用凑微分法，将 $x^{2}\\,\\mathrm{d}x$ 凑成 $\\mathrm{d}(x^{3})$：\n$\\int \\frac{x^{4} + 1}{x^{6} + 1}\\,\\mathrm{d}x = \\int \\frac{1}{x^{2} + 1}\\,\\mathrm{d}x + \\frac{1}{3}\\int \\frac{3x^{2}}{(x^{3})^{2} + 1}\\,\\mathrm{d}x = \\int \\frac{1}{x^{2} + 1}\\,\\mathrm{d}x + \\frac{1}{3}\\int \\frac{1}{(x^{3})^{2} + 1}\\,\\mathrm{d}(x^{3})$。\n分别利用反正切函数的积分公式进行计算：\n$= \\arctan x + \\frac{1}{3}\\arctan(x^{3}) + C$。\n（其中 $C$ 为任意常数）',
+    tags: ['不定积分', '因式分解', '凑微分', '反正切'],
+    source: '第四章习题',
+    createdAt: '2026-11-03T00:00:00.000Z',
+    updatedAt: '2026-11-03T00:00:00.000Z'
   }
 ];
 
