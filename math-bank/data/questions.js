@@ -892,6 +892,19 @@ window.TJ_BUILTIN_QUESTIONS = [
     source: '第四章习题',
     createdAt: '2026-11-03T00:00:00.000Z',
     updatedAt: '2026-11-03T00:00:00.000Z'
+  },
+  {
+    id: 'ch04-011',
+    chapterId: 'ch04',
+    type: '计算题',
+    difficulty: 3,
+    stem: '计算不定积分 $\\int \\frac{\\ln\\left(x + \\sqrt{1 + x^{2}}\\right)}{(1 + x^{2})^{3/2}}\\,\\mathrm{d}x$。',
+    answer: '$\\frac{x\\ln\\left(x + \\sqrt{1 + x^{2}}\\right)}{\\sqrt{1 + x^{2}}} - \\frac{1}{2}\\ln(1 + x^{2}) + C$',
+    solution: '使用分部积分法 $\\int u\\,\\mathrm{d}v = uv - \\int v\\,\\mathrm{d}u$。\n令 $u = \\ln\\left(x + \\sqrt{1 + x^{2}}\\right)$，则 $\\mathrm{d}u = \\frac{1}{\\sqrt{1 + x^{2}}}\\,\\mathrm{d}x$；\n令 $\\mathrm{d}v = \\frac{1}{(1 + x^{2})^{3/2}}\\,\\mathrm{d}x$。注意到 $\\mathrm{d}\\left(\\frac{x}{\\sqrt{1 + x^{2}}}\\right) = \\frac{1}{(1 + x^{2})^{3/2}}\\,\\mathrm{d}x$，故 $v = \\frac{x}{\\sqrt{1 + x^{2}}}$。\n代入分部积分公式：\n$\\int \\frac{\\ln\\left(x + \\sqrt{1 + x^{2}}\\right)}{(1 + x^{2})^{3/2}}\\,\\mathrm{d}x = \\ln\\left(x + \\sqrt{1 + x^{2}}\\right)\\cdot\\frac{x}{\\sqrt{1 + x^{2}}} - \\int \\frac{x}{\\sqrt{1 + x^{2}}}\\cdot\\frac{1}{\\sqrt{1 + x^{2}}}\\,\\mathrm{d}x$\n$= \\frac{x\\ln\\left(x + \\sqrt{1 + x^{2}}\\right)}{\\sqrt{1 + x^{2}}} - \\int \\frac{x}{1 + x^{2}}\\,\\mathrm{d}x$。\n对于右侧的积分，直接使用凑微分法：\n$\\int \\frac{x}{1 + x^{2}}\\,\\mathrm{d}x = \\frac{1}{2}\\int \\frac{\\mathrm{d}(1 + x^{2})}{1 + x^{2}} = \\frac{1}{2}\\ln(1 + x^{2})$。\n代回原式，得：\n$\\int \\frac{\\ln\\left(x + \\sqrt{1 + x^{2}}\\right)}{(1 + x^{2})^{3/2}}\\,\\mathrm{d}x = \\frac{x\\ln\\left(x + \\sqrt{1 + x^{2}}\\right)}{\\sqrt{1 + x^{2}}} - \\frac{1}{2}\\ln(1 + x^{2}) + C$。\n（其中 $C$ 为任意常数）',
+    tags: ['不定积分', '分部积分', '凑微分', '对数函数'],
+    source: '第四章习题',
+    createdAt: '2026-11-03T00:00:00.000Z',
+    updatedAt: '2026-11-03T00:00:00.000Z'
   }
 ];
 
