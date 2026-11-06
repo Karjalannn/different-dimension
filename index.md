@@ -14,7 +14,7 @@ title: Hi!!!我是柯宇！
   {% if post.column == '万能遥控' %}
   <li class="post-item">
     <h2 class="post-item-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-    <p class="post-item-meta">{{ post.chapter_label }} · {{ post.date | date: "%Y-%m-%d" }}</p>
+    <p class="post-item-meta">{% if post.chapter_label and post.chapter_label != post.title %}{{ post.chapter_label }} · {% endif %}{{ post.date | date: "%Y-%m-%d" }}</p>
     <p class="post-item-excerpt">{{ post.content | strip_html | normalize_whitespace | strip | truncate: 79, "…" }}</p>
   </li>
   {% endif %}

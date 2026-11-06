@@ -11,8 +11,7 @@ permalink: /wanneng-yaokong/
 <ul class="chapter-list">
 {% for post in chapters %}
   <li class="chapter-item">
-    <span class="chapter-no">{{ post.chapter_label | default: post.chapter }}</span>
-    <a class="chapter-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <a class="chapter-title" href="{{ post.url | relative_url }}">{% if post.chapter_label and post.chapter_label != post.title %}<span class="chapter-no">{{ post.chapter_label }}</span>{% endif %}{{ post.title }}</a>
     <span class="chapter-date">{{ post.date | date: "%Y-%m-%d" }}</span>
   </li>
 {% else %}
